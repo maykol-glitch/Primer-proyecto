@@ -1,1 +1,829 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pastelería - Catálogo de Tortas</title>
+  <link rel="stylesheet" href="tortas.css">
+</head>
+<body>
+    <a href="#carrito-seccion" class="carrito-flotante">
+    <span class="icono-bolsa">🛒</span>
+  </a>
 
+  <section class="banner">
+    <div class="banner-content">
+      <h1>PASTELES</h1>
+      <h2>Y TORTAS</h2>
+    </div>
+  </section>
+
+  <main class="catalog" id="catalogo-seccion">
+
+    <!-- INPUTS RADIOS OCULTOS (Controlan los filtros con CSS) -->
+    <input type="radio" id="btn-bodas" name="categorias-tortas">
+    <input type="radio" id="btn-cumpleanos" name="categorias-tortas">
+    <input type="radio" id="btn-finas" name="categorias-tortas">
+
+    <div class="contenedor-botones">
+      
+      <label for="btn-bodas" class="btn-categoria">
+        <img src="botonboda.jpg" alt="Icono Bodas" class="img-boton">
+        <span>Bodas y Aniversario </span>
+      </label>
+
+      <label for="btn-cumpleanos" class="btn-categoria">
+        <img src="cumple.jpg" alt="Icono Cumpleaños" class="img-boton">
+        <span>Cumpleaños</span>
+      </label>
+
+      <label for="btn-finas" class="btn-categoria">
+        <img src="finos.jpg" alt="Icono Finas" class="img-boton">
+        <span>Finos o de Autor</span>
+      </label>
+
+    </div>
+
+    <div class="grid-productos">
+      
+        <div class="card bodas">
+        <a href="#info-boda-real" class="enlace-tarjeta">
+        <div class="img-box" style="background-image: url('boda.jpg');"></div>
+        <h4>BODA REAL</h4>
+        </a>
+        <p class="precio">S/ 94.00</p>
+        </div>
+        
+        <div class="card bodas">
+            <a href="#info-sinfonia" class="enlace-tarjeta">  
+            <div class="img-box"style="background-image: url('sinfonia.jpg');">
+            </div>
+            </a>
+            <h4>SINFONÍA NUPCIAL</h4>
+            <p class="precio">S/ 74.00</p>
+        </div>
+
+        <div class="card bodas">
+            <a href="#info-oro" class="enlace-tarjeta"> 
+            <div class="img-box" style="background-image: url('oro.jpg');">
+            </div>
+            </a>
+            <h4>ELEGANCIA DE ORO</h4>
+            <p class="precio">S/ 86.00</p>
+        </div>
+
+        <div class="card bodas">
+            <a href="#info-perla" class="enlace-tarjeta">
+            <div class="img-box" style="background-image: url('perla.jpg');">
+            </div>
+            </a>
+            <h4>ANIVERSARIO DE PERLA</h4>
+            <p class="precio">S/ 69.00</p>
+        </div>
+
+        <div class="card bodas">
+            <a href="#info-rosas" class="enlace-tarjeta">
+            <div class="img-box" style="background-image: url('jardin.jpg');">
+            </div>
+            </a>
+            <h4>JARDÍN DE ROSAS</h4>
+            <p class="precio">S/ 50.00</p>
+        </div>
+
+        <div class="card bodas">
+            <a href="#info-amor" class="enlace-tarjeta">
+            <div class="img-box" style="background-image: url('3leches.jpg');">
+            </div>
+            </a>
+            <h4>AMOR ETERNO</h4>
+            <p class="precio">S/ 40.00</p>
+        </div>
+         
+        <div class="card bodas">
+            <a href="#info-marfil" class="enlace-tarjeta">
+            <div class="img-box" style="background-image: url('marfil.jpg');">
+            </div>
+            </a>
+            <h4>MARFIL Y CHOCOLATE</h4>
+            <p class="precio">S/ 36.00</p>
+        </div>
+        
+        <div class="card cumpleanos">
+            <a href="#info-supremo" class="enlace-tarjeta">
+            <div class="img-box" style="background-image: url('supremo.jpg');">
+            </div>
+            </a>
+            <h4>CHOCOLATE SUPREMO</h4>
+            <p class="precio">S/ 46.00</p>
+        </div>
+        
+        <div class="card cumpleanos">
+            <a href="#info-frutos" class="enlace-tarjeta">
+            <div class="img-box" style="background-image: url('frutos.jpg');">
+            </div>
+            </a>
+            <h4>FRUTOS ROJOS</h4>
+            <p class="precio">S/ 32.00</p>
+        </div>
+
+        <div class="card cumpleanos">
+            <a href="#info-arcoiris" class="enlace-tarjeta">
+            <div class="img-box" style="background-image: url('arcoiris.jpg');">
+            </div>
+            </a>
+            <h4>ARCOÍRIS MÁGICO</h4>
+            <p class="precio">S/ 25.00</p>
+        </div>
+
+        <div class="card cumpleanos">
+            <a href="#info-fiesta" class="enlace-tarjeta">
+            <div class="img-box" style="background-image: url('fiesta.jpg');">
+            </div>
+            </a>
+            <h4>FIESTA DE VAINILLA Y CONFETI</h4>
+            <p class="precio">S/28.00</p>
+        </div>
+
+        <div class="card cumpleanos">
+            <a href="#info-dino" class="enlace-tarjeta">
+            <div class="img-box" style="background-image: url('dino.jpg');">
+            </div>
+            </a>
+            <h4>AVENTURA DE DINOSAURIOS</h4>
+            <p class="precio">S/ 47.00</p>
+        </div>
+        
+        <div class="card cumpleanos">
+            <a href="#info-fresa" class="enlace-tarjeta">
+            <div class="img-box" style="background-image: url('fresa.jpg');">
+            </div>
+            </a>
+            <h4>PRINCESA DE FRESA</h4>
+            <p class="precio">S/ 30.00</p>
+        </div>
+
+        <div class="card cumpleanos">
+            <a href="#info-cake" class="enlace-tarjeta">
+            <div class="img-box" style="background-image: url('cake.jpg');">
+            </div>
+            </a>
+            <h4>GALLETA MONSTER CAKE</h4>
+            <p class="precio">S/ 45.00</p>
+        </div>
+
+        <div class="card finas">
+            <a href="#info-red" class="enlace-tarjeta">
+            <div class="img-box" style="background-image: url('red.jpg');">
+            </div>
+            </a>
+            <h4>RED VELVET CLÁSICA</h4>
+            <p class="precio">S/ 68.00</p>
+        </div>
+
+        <div class="card finas">
+            <a href="#info-queso" class="enlace-tarjeta">
+            <div class="img-box" style="background-image: url('queso.jpg');">
+            </div>
+            </a>
+            <h4>QUESO CON ARÁNDANOS</h4>
+            <p class="precio">S/ 65.00</p>
+        </div>
+
+        <div class="card finas">
+            <a href="#info-selva" class="enlace-tarjeta">
+            <div class="img-box" style="background-image: url('selva.jpg');">
+            </div>
+            </a>
+            <h4>SELVA NEGRA DE LUXE</h4>
+            <p class="precio">S/ 85.00</p>
+        </div>
+
+        <div class="card finas">
+            <a href="#info-opera" class="enlace-tarjeta">
+            <div class="img-box" style="background-image: url('opera.jpg');">
+            </div>
+            </a>
+            <h4>OPERA DE CACAO </h4>
+            <p class="precio">S/ 90.00</p>
+        </div>
+
+        <div class="card finas">
+            <a href="#info-tarta" class="enlace-tarjeta">
+            <div class="img-box" style="background-image: url('tarta.jpg');">
+            </div>
+            </a>
+            <h4>TARTA FINA DE MANZANA Y ALMENDRAS</h4>
+            <p class="precio">S/ 50.00</p>
+        </div>
+
+        <div class="card finas">
+            <a href="#info-mousse" class="enlace-tarjeta">
+            <div class="img-box" style="background-image: url('mousse.jpg');">
+            </div>
+            </a>
+            <h4>MOUSSE DE MARACUYÁ ARTESANAL</h4>
+            <p class="precio">S/ 60.00</p>
+        </div>
+
+    </div>
+</main>
+<div id="info-boda-real" class="pantalla-detalle">
+  <div class="caja-detalle">
+    
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    
+    <div class="contenido-split">
+      
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('boda.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('boda1.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('boda2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('boda3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>BODA REAL</h2>
+        <p class="tag-categoria">Categoría: Bodas y Aniversario</p>
+        <p class="descripcion">
+          Sofisticada torta de bodas diseñada en tres pisos con acabado liso de masa elástica y delicados detalles florales. Perfecta para celebraciones elegantes y fotografías memorables.
+        </p>
+
+        <p class="precio-grande">S/ 94.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="info-sinfonia" class="pantalla-detalle">
+  <div class="caja-detalle">
+    
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    
+    <div class="contenido-split">
+      
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('sinfonia.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('sinfonia1.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('sinfonia2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('sinfonia3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>SINFONÍA NUPCIAL</h2>
+        <p class="tag-categoria">Categoría: Bodas y Aniversario</p>
+        <p class="descripcion">
+          Bizcocho de vainilla con pecanas, con crema de queso y limón, decorado con frutos rojos de estación y chantilly.
+        </p>
+
+        <p class="precio-grande">S/ 74.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="info-oro" class="pantalla-detalle">
+  <div class="caja-detalle">
+    
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    
+    <div class="contenido-split">
+      
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('oro.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('oro1.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('oro2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('oro3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>ELEGANCIA DE ORO</h2>
+        <p class="tag-categoria">Categoría: Bodas y Aniversario</p>
+        <p class="descripcion">
+          El pastel para bodas de oro se caracteriza por una base sofisticada en tonos blancos, crema o marfil, elegantemente decorada con detalles en oro comestible, flores (naturales o de azúcar) y sutiles texturas. Dependiendo del tipo de celebración, se puede optar por un diseño clásico y pulido en fondant, una propuesta moderna con bordes imperfectos y hojas de oro, o un estilo íntimo y rústico en crema, siempre coronado con un topper o elemento central que conmemore con orgullo los 50 años de matrimonio.
+        </p>
+
+        <p class="precio-grande">S/ 86.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="info-perla" class="pantalla-detalle">
+  <div class="caja-detalle">
+    
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    
+    <div class="contenido-split">
+      
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('perla.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('perla1.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('perla2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('perla3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>ANIVERSARIO DE PERLA</h2>
+        <p class="tag-categoria">Categoría: Bodas y Aniversario</p>
+        <p class="descripcion">
+          Un pastel de aniversario de bodas de perla celebra tradicionalmente los 30 años de matrimonio, destacando por diseños elegantes donde las perlas comestibles, las flores delicadas y los tonos blancos, marfiles o pasteles son los protagonistas absolutos.
+        </p>
+
+        <p class="precio-grande">S/ 69.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="info-rosas" class="pantalla-detalle">
+  <div class="caja-detalle">
+    
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    
+    <div class="contenido-split">
+      
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('jardin.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('jardin.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('jardin2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('jardin3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>JARDIN DE ROSAS</h2>
+        <p class="tag-categoria">Categoría: Bodas y Aniversario</p>
+        <p class="descripcion">
+          Una torta jardín de rosas es un pastel de diseño romántico y elegante que recrea la belleza de la primavera mediante flores y hojas detalladas. Su decoración principal se elabora con rosas esculpidas en buttercream, fondant o flores naturales, presentadas comúnmente en forma de ramos compactos, cascadas delicadas o simulando una canasta floral. Es la opción ideal para celebrar ocasiones especiales y femeninas como quinceañeros, aniversarios, cumpleaños y el Día de la Madre.
+        </p>
+
+        <p class="precio-grande">S/ 50.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="info-amor" class="pantalla-detalle">
+  <div class="caja-detalle">
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    <div class="contenido-split">
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('3leches.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('3leches1.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('3leches2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('3leches3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>AMOR ETERNO</h2>
+        <p class="tag-categoria">Categoría: Bodas y Aniversario</p>
+        <p class="descripcion">
+          Una torta "Amor Eterno" suele prepararse combinando finas capas de masa de hojarasca crujiente con rellenos dulces de manjar (dulce de leche), crema pastelera, crema chantilly y frambuesas para equilibrar el sabor. Por fuera, se distingue por su decoración vintage con crema en forma de corazón o detalles florales que evocan el romanticismo.
+        </p>
+
+        <p class="precio-grande">S/ 40.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="info-marfil" class="pantalla-detalle">
+  <div class="caja-detalle">
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    
+    <div class="contenido-split">
+      
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('marfil.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('marfil1.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('marfil2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('marfil3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>MARFIL Y CHOCOLATE</h2>
+        <p class="tag-categoria">Categoría: Bodas y Aniversario</p>
+        <p class="descripcion">
+          Una torta de marfil y chocolate combina la elegancia visual de los tonos crema o marfil (usualmente logrados con chocolate blanco o cremas de mantequilla sutiles) con la intensidad del chocolate oscuro. Esta combinación se presenta comúnmente en dos formatos principales: una torta marmoleada clásica donde se intercalan masas de vainilla y chocolate, o un refinado pastel de capas con bizcocho húmedo, rellenos oscuros y una cubierta sofisticada.
+        </p>
+
+        <p class="precio-grande">S/ 36.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="info-supremo" class="pantalla-detalle">
+  <div class="caja-detalle">
+    
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    
+    <div class="contenido-split">
+      
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('supremo.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('supremo1.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('supremo2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('supremo3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>CHOCOLATE SUPREMO</h2>
+        <p class="tag-categoria">Categoría: Cumpleaños</p>
+        <p class="descripcion">
+          El Pastel de Chocolate Supremo es una receta clásica e intensa, ideal para los verdaderos amantes del cacao por su textura húmeda, bizcocho esponjoso y una cobertura cremosa de chocolate.
+        </p>
+
+        <p class="precio-grande">S/ 46.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="info-frutos" class="pantalla-detalle">
+  <div class="caja-detalle">
+    
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    
+    <div class="contenido-split">
+      
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('frutos.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('frutos1.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('frutos2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('frutos3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>FRUTOS ROJOS</h2>
+        <p class="tag-categoria">Categoría: Cumpleaños</p>
+        <p class="descripcion">
+          La torta de frutos rojos es uno de los postres más cotizados por su equilibrio perfecto entre el dulzor de la masa o crema y la acidez natural de las fresas, arándanos, frambuesas y moras.
+        </p>
+
+        <p class="precio-grande">S/ 32.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="info-arcoiris" class="pantalla-detalle">
+  <div class="caja-detalle">
+    
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    
+    <div class="contenido-split">
+      
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('arcoiris.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('arcoiris1.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('arcoiris2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('arcoiris3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>ARCOÍRIS MÁGICO</h2>
+        <p class="tag-categoria">Categoría: Cumpleaños</p>
+        <p class="descripcion">
+          La torta arcoíris mágica es uno de los pasteles más populares y espectaculares para celebraciones, destacando por su vibrante combinación de colores tanto en el exterior como en sus capas internas. Generalmente se compone de seis capas de bizcocho de vainilla, cada una teñida con un color del arcoíris, alternadas con un relleno claro como buttercream o merengue suizo para crear un contraste mágico al cortarla
+        </p>
+
+        <p class="precio-grande">S/ 25.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="info-fiesta" class="pantalla-detalle">
+  <div class="caja-detalle">
+    
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    
+    <div class="contenido-split">
+      
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('fiesta.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('fiesta1.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('fiesta2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('fiesta3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>FIESTA DE VAINILLA Y CONFETI</h2>
+        <p class="tag-categoria">Categoría: Cumpleaños</p>
+        <p class="descripcion">
+          La torta de fiesta de vainilla y confeti (también conocida popularmente como Funfetti cake) es el clásico pastel de cumpleaños que destaca por su bizcocho esponjoso de vainilla salpicado con chispas de colores horneadas en la masa. Por lo general, se cubre y rellena con un suave buttercream (crema de mantequilla) de vainilla o frosting de queso crema, decorándose con más grajeas festivas.
+        </p>
+
+        <p class="precio-grande">S/ 28.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="info-dino" class="pantalla-detalle">
+  <div class="caja-detalle">
+    
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    
+    <div class="contenido-split">
+      
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('dino.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('dino1.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('dino2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('dino3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>AVENTURA DE DINOSAURIOS</h2>
+        <p class="tag-categoria">Categoría: Cumpleaños</p>
+        <p class="descripcion">
+          Una torta de aventura de dinosaurios es una de las opciones más populares y espectaculares para celebrar un cumpleaños infantil. Este tipo de pastel transporta a los niños a un mundo prehistórico lleno de acción, volcanes, vegetación tropical y sus criaturas prehistóricas favoritas.
+        </p>
+
+        <p class="precio-grande">S/ 47.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="info-fresa" class="pantalla-detalle">
+  <div class="caja-detalle">
+    
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    
+    <div class="contenido-split">
+      
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('fresa.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('fresa1.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('fresa2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('fresa3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>PRINCESA DE FRESA</h2>
+        <p class="tag-categoria">Categoría: Cumpleaños</p>
+        <p class="descripcion">
+          La torta princesa de fresa es un postre que se presenta principalmente en dos versiones: la Tarta de la Princesa sueca (Prinsesstårta) adaptada con fresas, caracterizada por sus capas de bizcocho esponjoso, crema pastelera, mermelada y una cubierta elegante de mazapán rosado; o una torta temática infantil (de princesas de Disney o Rosita Fresita) hecha de bizcocho de vainilla, rellena con crema chantilly y fresas frescas, y decorada con detalles mágicos como coronas o tonos rosa.
+        </p>
+
+        <p class="precio-grande">S/ 30.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="info-cake" class="pantalla-detalle">
+  <div class="caja-detalle">
+    
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    
+    <div class="contenido-split">
+      
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('cake.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('cake1.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('cake2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('cake3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>GALLETA MONSTER CAKE</h2>
+        <p class="tag-categoria">Categoría: Cumpleaños</p>
+        <p class="descripcion">
+          Una torta del Monstruo de las Galletas (o Cookie Monster Cake) es uno de los diseños más divertidos y populares para cumpleaños infantiles y fiestas temáticas. Destaca por su vibrante color azul, su textura que simula pelaje y, por supuesto, por estar decorada con muchas galletas con chispas de chocolate.
+        </p>
+
+        <p class="precio-grande">S/ 45.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="info-red" class="pantalla-detalle">
+  <div class="caja-detalle">
+    
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    
+    <div class="contenido-split">
+      
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('red.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('red1.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('red2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('red3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>RED VELVET CLÁSICA</h2>
+        <p class="tag-categoria">Categoría: Finos o de Autor</p>
+        <p class="descripcion">
+          La torta Red Velvet clásica destaca por su bizcocho húmedo de color rojo intenso con un sutil sabor a cacao, perfectamente equilibrado con un suave frosting de queso crema. Su textura aterciopelada se logra gracias a una reacción química única entre el vinagre, el bicarbonato de sodio y el suero de leche (buttermilk).
+        </p>
+
+        <p class="precio-grande">S/ 68.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="info-queso" class="pantalla-detalle">
+  <div class="caja-detalle">
+    
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    
+    <div class="contenido-split">
+      
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('queso.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('queso1.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('queso2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('queso3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>QUESO CON ARÁNDANOS</h2>
+        <p class="tag-categoria">Categoría: Finos o de Autor</p>
+        <p class="descripcion">
+          Una tarta de queso con arándanos (o cheesecake) es un postre cremoso que combina una base crujiente de galletas con un relleno suave de queso y una cobertura de salsa de arándanos.
+        </p>
+
+        <p class="precio-grande">S/ 65.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="info-selva" class="pantalla-detalle">
+  <div class="caja-detalle">
+    
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    
+    <div class="contenido-split">
+      
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('selva.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('selva1.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('selva2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('selva3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>SELVA NEGRA DE LUXE</h2>
+        <p class="tag-categoria">Categoría: Finos o de Autor</p>
+        <p class="descripcion">
+          torta Selva Negra de lujo o estilo vanguardista combina el clásico bizcocho de chocolate húmedo con ingredientes de alta calidad como ganache de chocolate semiamargo, cerezas negras maceradas o en gellé, y un toque de licor de cerezas (Kirsch).
+        </p>
+
+        <p class="precio-grande">S/ 85.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="info-opera" class="pantalla-detalle">
+  <div class="caja-detalle">
+    
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    
+    <div class="contenido-split">
+      
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('opera.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('opera1.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('opera2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('opera3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>OPERA DE CACAO</h2>
+        <p class="tag-categoria">Categoría: Finos o de Autor</p>
+        <p class="descripcion">
+          La Torta Ópera es un clásico pastel francés de capas finas que combina bizcocho de almendras, crema de mantequilla al café y ganache de chocolate.
+        </p>
+
+        <p class="precio-grande">S/ 90.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="info-tarta" class="pantalla-detalle">
+  <div class="caja-detalle">
+    
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    
+    <div class="contenido-split">
+      
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('tarta.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('tarta1.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('tarta2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('tarta3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>TARTA FINA DE MANZANA Y ALMENDRAS</h2>
+        <p class="tag-categoria">Categoría: Finos o de Autor</p>
+        <p class="descripcion">
+          tarta fina de manzana y almendras es un postre crujiente, rápido y elegante hecho con una base de hojaldre, crema de almendras y finas láminas de manzana.
+        </p>
+
+        <p class="precio-grande">S/ 55.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="info-mousse" class="pantalla-detalle">
+  <div class="caja-detalle">
+    
+    <a href="#catalogo-seccion" class="btn-cerrar">X Cerrar</a>
+    
+    <div class="contenido-split">
+      
+      <div class="galeria-detalle">
+        <div class="foto-muestra" style="background-image: url('mousse.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('mousse1.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('mousse2.jpg');"></div>
+        <div class="foto-muestra" style="background-image: url('mousse3.jpg');"></div>
+      </div>
+      
+      <div class="texto-detalle">
+        <h2>MOUSSE DE MARACUYÁ ARTESANAL</h2>
+        <p class="tag-categoria">Categoría: Finos o de Autor</p>
+        <p class="descripcion">
+          torta mousse de maracuyá es un postre frío y refrescante que combina una base crujiente de galletas o un bizcocho suave con una crema tropical ligera y ácida.
+        </p>
+
+        <p class="precio-grande">S/ 60.00</p>
+        <button type="button" class="btn-agregar-carrito">🛒 Agregar al Carrito</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+<!-- Sección de Contacto al final de la página -->
+<footer class="pie-pagina">
+  <div class="contacto-contenedor">
+    
+    <div class="contacto-columna">
+      <h3>Contacto</h3>
+      <p>Teléfono: <a href="tel:+51999999999">+51 999 999 999</a></p>
+    </div>
+
+    <div class="contacto-columna">
+      <h3>Atención</h3>
+      <p>Villa El Salvador, Lima, Perú</p>
+    </div>
+
+  </div>
+  <div class="copyright">
+    <p>Catálogo de Pasteles y Tortas.</p>
+  </div>
+</footer>
+</html>
